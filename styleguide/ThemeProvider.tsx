@@ -1,15 +1,15 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import theme, { inverted } from './theme';
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./theme";
 
 interface Props {
-    children: any
+  children: any;
 }
 
 export default ({ children }: Props) => (
-	<ThemeProvider theme={theme}>{children}</ThemeProvider>
+  <ThemeProvider theme={lightTheme}>{children}</ThemeProvider>
 );
 
 export const Inverted = ({ children }: Props) => (
-	<ThemeProvider theme={inverted}>{children}</ThemeProvider>
+  <ThemeProvider theme={darkTheme}>{children}</ThemeProvider>
 );

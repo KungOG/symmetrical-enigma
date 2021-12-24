@@ -2,9 +2,10 @@ const path = require("path");
 const { version } = require("./package");
 
 module.exports = {
-  components: "src/components/**/*.{js,tsx}",
+  title: "Kungog UI",
+  components: "src/components/**/index.{js,ts,tsx}",
   styleguideComponents: {
-    Wrapper: path.join(__dirname, "src/StyleGuideWrapper"),
+    Wrapper: path.join(__dirname, "styleguide/StyleGuideWrapper"),
   },
   defaultExample: true,
   moduleAliases: {

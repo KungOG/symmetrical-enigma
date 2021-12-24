@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "jsx": "react",
     "target": "esnext",
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "checkJs": false,
     "noEmit": true,
@@ -12,22 +12,19 @@
     "isolatedModules": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "module": "commonjs",
     "lib": [
       "dom",
       "es6",
-      "es7",
-      "dom.iterable",
-      "scripthost"
     ],
-    "types": [
-    "./node_modules/@types/"
-    ]
+    "baseUrl": ".",
+    "paths": {
+      "@styles": ["styleguide/utilities.ts"],
+    }
   },
   "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
   ]
 }

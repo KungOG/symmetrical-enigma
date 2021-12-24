@@ -6,6 +6,10 @@
     "name": "Oscar Gustafsson",
     "url": "https://kungog.se"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/KungOG/symmetrical-enigma.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -18,10 +22,15 @@
     "react-scripts": "5.0.0",
     "react-styleguidist": "^11.1.7",
     "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "webpack": "^5.65.0"
   },
   "scripts": {
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/styled-components": "^5.1.19"
   }
 }
